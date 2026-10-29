@@ -17,4 +17,6 @@ The GitHub Actions workflow in `.github/workflows/ios-build.yml` builds the iOS 
 
 After a successful run, download the `FarmManager-iOS-Simulator` artifact from that run's summary. It contains a simulator `.app` bundle for testing in the iOS Simulator; it is not signed for installation on a physical iPhone or for App Store distribution.
 
+The same workflow runs the `FarmManagerTests` unit-test target on an available iPhone simulator before uploading the app. The tests cover sale inventory updates, invalid sale quantities, and restoring saved farm data. You can also run them from Xcode on a Mac by selecting the `FarmManager` scheme and choosing **Product > Test**.
+
 To use GitHub's free standard runner allowance for public repositories, make the repository public. Check GitHub's current Actions usage and billing terms before relying on free builds, especially for private repositories.

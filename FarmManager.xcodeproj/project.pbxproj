@@ -13,6 +13,8 @@
 		A10000000000000000000004 /* AnimalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000004 /* AnimalsView.swift */; };
 		A10000000000000000000005 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000005 /* ProductsView.swift */; };
 		A10000000000000000000006 /* SalesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000006 /* SalesView.swift */; };
+		A20000000000000000000001 /* FarmStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000001 /* FarmStoreTests.swift */; };
+		A20000000000000000000002 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20000000000000000000002 /* XCTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,9 @@
 		B10000000000000000000005 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
 		B10000000000000000000006 /* SalesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesView.swift; sourceTree = "<group>"; };
 		C10000000000000000000001 /* FarmManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20000000000000000000001 /* FarmStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmStoreTests.swift; sourceTree = "<group>"; };
+		B20000000000000000000002 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C20000000000000000000001 /* FarmManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FarmManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E20000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20000000000000000000002 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -40,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				F10000000000000000000002 /* FarmManager */,
+				F20000000000000000000001 /* FarmManagerTests */,
 				F10000000000000000000003 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,8 +75,17 @@
 			isa = PBXGroup;
 			children = (
 				C10000000000000000000001 /* FarmManager.app */,
+				C20000000000000000000001 /* FarmManagerTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F20000000000000000000001 /* FarmManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000001 /* FarmStoreTests.swift */,
+			);
+			path = FarmManagerTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +108,24 @@
 			productReference = C10000000000000000000001 /* FarmManager.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D20000000000000000000001 /* FarmManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D20000000000000000000003 /* Build configuration list for PBXNativeTarget "FarmManagerTests" */;
+			buildPhases = (
+				D20000000000000000000002 /* Sources */,
+				E20000000000000000000001 /* Frameworks */,
+				E20000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				130000000000000000000001 /* PBXTargetDependency */,
+			);
+			name = FarmManagerTests;
+			productName = FarmManagerTests;
+			productReference = C20000000000000000000001 /* FarmManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +137,10 @@
 				TargetAttributes = {
 					D10000000000000000000001 = {
 						CreatedOnToolsVersion = 16.0;
+					};
+					D20000000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = D10000000000000000000001;
 					};
 				};
 			};
@@ -113,12 +158,32 @@
 			projectRoot = "";
 			targets = (
 				D10000000000000000000001 /* FarmManager */,
+				D20000000000000000000001 /* FarmManagerTests */,
 			);
+		};
+		120000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 110000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D10000000000000000000001;
+			remoteInfo = FarmManager;
+		};
+		130000000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D10000000000000000000001 /* FarmManager */;
+			targetProxy = 120000000000000000000001 /* PBXContainerItemProxy */;
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E10000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E20000000000000000000002 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,6 +203,14 @@
 				A10000000000000000000004 /* AnimalsView.swift in Sources */,
 				A10000000000000000000005 /* ProductsView.swift in Sources */,
 				A10000000000000000000006 /* SalesView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20000000000000000000001 /* FarmStoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +248,7 @@
 		210000000000000000000003 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_TESTABILITY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -202,6 +276,40 @@
 			};
 			name = Release;
 		};
+		220000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FarmManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FarmManager.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FarmManager";
+				TEST_TARGET_NAME = FarmManager;
+			};
+			name = Debug;
+		};
+		220000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FarmManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FarmManager.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FarmManager";
+				TEST_TARGET_NAME = FarmManager;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -219,6 +327,15 @@
 			buildConfigurations = (
 				210000000000000000000001 /* Debug */,
 				210000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D20000000000000000000003 /* Build configuration list for PBXNativeTarget "FarmManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				220000000000000000000001 /* Debug */,
+				220000000000000000000002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

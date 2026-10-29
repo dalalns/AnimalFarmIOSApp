@@ -51,9 +51,11 @@ final class FarmStore: ObservableObject {
     @Published private(set) var sales: [FarmSale] = []
 
     private let storageKey = "farm-manager.snapshot"
+    private let defaults: UserDefaults
 
-    init() {
-        guard let data = UserDefaults.standard.data(forKey: storageKey) else { return }
+    init(defaults: UserDefaults = .standard) {
+        self.defaults = defaults
+        guard let data = defaults.data(forKey: storageKey) else { return }
 
         do {
             let snapshot = try JSONDecoder().decode(FarmSnapshot.self, from: data)
@@ -107,7 +109,7 @@ final class FarmStore: ObservableObject {
         do {
             let snapshot = FarmSnapshot(animals: animals, products: products, sales: sales)
             let data = try JSONEncoder().encode(snapshot)
-            UserDefaults.standard.set(data, forKey: storageKey)
+            defaults.set(data, forKey: storageKey)
         } catch {
             print("Unable to save farm data: \(error.localizedDescription)")
         }
