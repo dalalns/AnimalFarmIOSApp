@@ -1,0 +1,229 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* FarmManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* FarmManagerApp.swift */; };
+		A10000000000000000000002 /* FarmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000002 /* FarmData.swift */; };
+		A10000000000000000000003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000003 /* ContentView.swift */; };
+		A10000000000000000000004 /* AnimalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000004 /* AnimalsView.swift */; };
+		A10000000000000000000005 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000005 /* ProductsView.swift */; };
+		A10000000000000000000006 /* SalesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000006 /* SalesView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B10000000000000000000001 /* FarmManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmManagerApp.swift; sourceTree = "<group>"; };
+		B10000000000000000000002 /* FarmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmData.swift; sourceTree = "<group>"; };
+		B10000000000000000000003 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B10000000000000000000004 /* AnimalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsView.swift; sourceTree = "<group>"; };
+		B10000000000000000000005 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		B10000000000000000000006 /* SalesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesView.swift; sourceTree = "<group>"; };
+		C10000000000000000000001 /* FarmManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E10000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F10000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				F10000000000000000000002 /* FarmManager */,
+				F10000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F10000000000000000000002 /* FarmManager */ = {
+			isa = PBXGroup;
+			path = FarmManager;
+			sourceTree = "<group>";
+			children = (
+				B10000000000000000000001 /* FarmManagerApp.swift */,
+				B10000000000000000000002 /* FarmData.swift */,
+				B10000000000000000000003 /* ContentView.swift */,
+				B10000000000000000000004 /* AnimalsView.swift */,
+				B10000000000000000000005 /* ProductsView.swift */,
+				B10000000000000000000006 /* SalesView.swift */,
+			);
+		};
+		F10000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C10000000000000000000001 /* FarmManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D10000000000000000000001 /* FarmManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D10000000000000000000003 /* Build configuration list for PBXNativeTarget "FarmManager" */;
+			buildPhases = (
+				D10000000000000000000002 /* Sources */,
+				E10000000000000000000001 /* Frameworks */,
+				E10000000000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FarmManager;
+			productName = FarmManager;
+			productReference = C10000000000000000000001 /* FarmManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		110000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					D10000000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = D10000000000000000000004 /* Build configuration list for PBXProject "FarmManager" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F10000000000000000000001;
+			productRefGroup = F10000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D10000000000000000000001 /* FarmManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E10000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D10000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000001 /* FarmManagerApp.swift in Sources */,
+				A10000000000000000000002 /* FarmData.swift in Sources */,
+				A10000000000000000000003 /* ContentView.swift in Sources */,
+				A10000000000000000000004 /* AnimalsView.swift in Sources */,
+				A10000000000000000000005 /* ProductsView.swift in Sources */,
+				A10000000000000000000006 /* SalesView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		210000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		210000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		210000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FarmManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		210000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FarmManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D10000000000000000000003 /* Build configuration list for PBXNativeTarget "FarmManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				210000000000000000000003 /* Debug */,
+				210000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D10000000000000000000004 /* Build configuration list for PBXProject "FarmManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				210000000000000000000001 /* Debug */,
+				210000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 110000000000000000000001 /* Project object */;
+}
