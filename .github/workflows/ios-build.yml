@@ -13,7 +13,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Check out source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Build iOS Simulator app
         run: >-
@@ -27,7 +27,7 @@ jobs:
           build
 
       - name: Upload simulator app
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: FarmManager-iOS-Simulator
           path: build/Build/Products/Debug-iphonesimulator/FarmManager.app
